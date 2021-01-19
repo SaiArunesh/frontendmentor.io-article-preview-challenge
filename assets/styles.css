@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: #6d7f97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+/* card */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 730px;
+  min-height: 294px;
+}
+
+/* card ends */
+/* img container */
+.img-container img {
+  width: 292px;
+  height: 295px;
+}
+
+/* img container ends */
+/* card info */
+.card-info {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  height: 295px;
+  /* card info bottom */
+  /* card info bottom ends*/
+}
+
+.card-info .title {
+  font-size: 0.65rem;
+  color: #48556a;
+}
+
+.card-info .para {
+  padding: 3% 0;
+  color: #9eafc2;
+}
+
+.card-info .card-info-bottom {
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-info .card-info-bottom .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.card-info .card-info-bottom .left img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card-info .card-info-bottom .left .person-info {
+  padding-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-info .card-info-bottom .left .person-info h4 {
+  color: #48556a;
+}
+
+.card-info .card-info-bottom .left .person-info p {
+  color: #9eafc2;
+}
+
+.card-info .card-info-bottom .right {
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.card-info .card-info-bottom .right img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+}
+
+/* card info bottom */
+/* card info ends */
+/* attribution */
+.attribution {
+  margin: 5%;
+  color: oldlace;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* attribution ends */
+@media screen and (max-width: 611px) {
+  .card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 292px;
+  }
+  .card .img-container {
+    margin-bottom: -4px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
