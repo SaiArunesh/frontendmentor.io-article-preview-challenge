@@ -85,6 +85,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .card-info .card-info-bottom .left {
@@ -133,6 +134,7 @@ body {
   height: 40px;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 
 .card-info .card-info-bottom .right #share {
@@ -154,8 +156,8 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: -65px;
-  left: -95px;
+  top: -70%;
+  left: 64%;
   min-width: 220px;
   height: 40px;
   background-color: #48556a;
@@ -164,6 +166,7 @@ body {
   bottom: 30px;
   -webkit-box-shadow: 1px 1px 3px;
           box-shadow: 1px 1px 3px;
+  z-index: 1;
 }
 
 #snackbar p {
@@ -210,6 +213,9 @@ body {
   .card .img-container {
     margin-bottom: -4px;
   }
+  .card-info .card-info-bottom .right {
+    z-index: 3;
+  }
   #snackbar {
     position: absolute;
     display: -webkit-box;
@@ -218,27 +224,27 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
     top: 0px;
-    left: -235px;
+    left: -15px;
     min-width: 290px;
-    height: 61px;
+    height: 81px;
     background-color: #48556a;
     border-radius: 0px 0px 5px 5px;
-    padding: 16px;
+    padding: 0px 0px 3px 34px;
     bottom: 30px;
     -webkit-box-shadow: 1px 1px 3px;
             box-shadow: 1px 1px 3px;
   }
   #snackbar p {
-    color: #9eafc2;
-    letter-spacing: 5px;
-    font-size: 0.6rem;
+    font-size: 12px;
   }
   #snackbar img {
-    height: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   #snackbar .arrow {
     display: none;

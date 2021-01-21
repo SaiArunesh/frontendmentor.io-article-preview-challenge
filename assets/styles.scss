@@ -65,6 +65,7 @@ body {
 		justify-content: space-between;
 		flex: 1 1 auto;
 		align-items: center;
+		position: relative;
 		.left {
 			display: flex;
 			align-items: center;
@@ -94,6 +95,7 @@ body {
 			height: 40px;
 			text-align: center;
 			position: relative;
+			z-index: 1;
 			#share {
 				position: absolute;
 				width: 20px;
@@ -113,8 +115,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	top: -65px;
-	left: -95px;
+	top: -70%;
+	left: 64%;
 	min-width: 220px;
 	height: 40px;
 	background-color: $very-dark-grayish-blue;
@@ -122,6 +124,7 @@ body {
 	padding: 16px;
 	bottom: 30px;
 	box-shadow: 1px 1px 3px;
+	z-index: 1;
 	p {
 		color: $grayish-blue;
 		letter-spacing: 5px;
@@ -162,32 +165,35 @@ body {
 		.img-container {
 			margin-bottom: -4px;
 		}
-    }
-    #snackbar {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        top: 0px;
-        left: -235px;
-        min-width: 290px;
-        height: 61px;
-        background-color: $very-dark-grayish-blue;
-        border-radius: 0px 0px 5px 5px;
-        padding: 16px;
-        bottom: 30px;
-        box-shadow: 1px 1px 3px;
-        p {
-            color: $grayish-blue;
-            letter-spacing: 5px;
-            font-size: 0.6rem;
-        }
-        img {
-            height: 20px;
-            padding-left: 10px;
-        }
-        .arrow {
-           display: none;
-        }
-    }
+	}
+
+	.card-info .card-info-bottom .right {
+		z-index: 3;
+	}
+	
+	#snackbar {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-basis:40%;
+		top: 0px;
+		left: -15px;
+		min-width: 290px;
+		height: 81px;
+		background-color: $very-dark-grayish-blue;
+		border-radius: 0px 0px 5px 5px;
+		padding: 0px 0px 3px 34px;
+		bottom: 30px;
+		box-shadow: 1px 1px 3px;   
+		p{
+			font-size: 12px;
+		}
+		 img{
+			 padding-left: 20px;
+		 }
+		.arrow{
+			display: none;
+		}
+	}
 }

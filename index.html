@@ -31,23 +31,23 @@
 						you make any room feel complete.
 					</p>
 				</div>
-				<div class="card-info-bottom">
-					<div class="left">
+				<div class="card-info-bottom" id="bottom">
+					<div class="left" id="left">
 						<img src="./images/avatar-michelle.jpg" alt="" />
 						<div class="person-info">
 							<h4>Michelle Appleton</h4>
 							<p>28 June 2020</p>
 						</div>
 					</div>
-					<div class="right">
-						<div id="snackbar">
-							<p>SHARE</p>
-							<img src="./images/icon-facebook.svg" alt="" />
-							<img src="./images/icon-twitter.svg" alt="" />
-							<img src="./images/icon-pinterest.svg" alt="" />
-							<div class="arrow"></div>
-						</div>
+					<div class="right" id="right">
 						<img id="share" src="./images/icon-share.svg" alt="" />
+					</div>
+					<div id="snackbar">
+						<p>SHARE</p>
+						<img src="./images/icon-facebook.svg" alt="" />
+						<img src="./images/icon-twitter.svg" alt="" />
+						<img src="./images/icon-pinterest.svg" alt="" />
+						<div class="arrow"></div>
 					</div>
 				</div>
 			</div>
@@ -64,9 +64,10 @@
 			var el = document.getElementById('share');
 			el.addEventListener('click', () => {
 				console.log('click detect');
-				var x = document.getElementById('snackbar');
+				var x= document.getElementById("snackbar");
 				x.style.display = x.style.display === 'flex' ? 'none' : 'flex';
-			});
+			
+			})
 		</script>
 	</body>
 </html>
