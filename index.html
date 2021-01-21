@@ -13,7 +13,6 @@
 		/>
 		<link rel="stylesheet" href="./assets/styles.css" />
 		<title>Frontend Mentor | Article preview component</title>
-
 	</head>
 	<body>
 		<div class="card">
@@ -34,16 +33,26 @@
 				</div>
 				<div class="card-info-bottom">
 					<div class="left">
-            <img src="./images/avatar-michelle.jpg" alt="" />
-            <div class="person-info">
-						<h4>Michelle Appleton</h4>
-            <p>28 June 2020</p>
-          </div>
+						<img src="./images/avatar-michelle.jpg" alt="" />
+						<div class="person-info">
+							<h4>Michelle Appleton</h4>
+							<p>28 June 2020</p>
+						</div>
 					</div>
-					<div class="right"><img src="./images/icon-share.svg" alt=""></div>
+					<div class="right">
+						<div id="snackbar">
+							<p>SHARE</p>
+							<img src="./images/icon-facebook.svg" alt="" />
+							<img src="./images/icon-twitter.svg" alt="" />
+							<img src="./images/icon-pinterest.svg" alt="" />
+							<div class="arrow"></div>
+						</div>
+						<img id="share" src="./images/icon-share.svg" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -51,5 +60,13 @@
 			>. Coded by
 			<a href="https://saiarunesh.github.io/portfolio/">Sai Arunesh</a>.
 		</div>
+		<script>
+			var el = document.getElementById('share');
+			el.addEventListener('click', () => {
+				console.log('click detect');
+				var x = document.getElementById('snackbar');
+				x.style.display = x.style.display === 'flex' ? 'none' : 'flex';
+			});
+		</script>
 	</body>
 </html>

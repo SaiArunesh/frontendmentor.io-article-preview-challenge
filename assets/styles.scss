@@ -14,19 +14,19 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 body {
 	font-family: 'Manrope', sans-serif;
 	font-size: 13px;
-	background-color: $desaturated-dark-blue;
-    display: flex;
-    flex-direction: column;
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 /* card */
 .card {
 	display: flex;
-    max-width: 730px;
-    min-height: 294px;
+	max-width: 730px;
+	min-height: 294px;
 }
 /* card ends */
 
@@ -35,96 +35,159 @@ body {
 	img {
 		width: 292px;
 		height: 295px;
+		border-radius: 5px 0px 0px 5px;
 	}
 }
 /* img container ends */
 
 /* card info */
 .card-info {
+	border-radius: 0px 5px 5px 0px;
 	background-color: white;
 	display: flex;
-    flex-direction: column;
-    padding: 5%;
-    height: 295px;
-    .title {
+	flex-direction: column;
+	padding: 5%;
+	height: 295px;
+	.title {
 		font-size: 0.65rem;
 		color: $very-dark-grayish-blue;
 	}
 
 	.para {
-        padding:3% 0;
+		padding: 3% 0;
 		color: $grayish-blue;
 	}
 
 	/* card info bottom */
 	.card-info-bottom {
-        padding-top: 2%;
+		padding-top: 2%;
 		display: flex;
-        justify-content: space-between;
-        flex:1 1 auto;
-        align-items: center;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		align-items: center;
 		.left {
 			display: flex;
-            align-items: center;
-            flex:1 1 50%;
+			align-items: center;
+			flex: 1 1 50%;
 			img {
 				height: 50px;
-                width: 50px;
-                border-radius: 50%;
-
-            }
-            .person-info{
-                padding-left:2%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                h4 {
-                    color: $very-dark-grayish-blue;
-                }
-                p{
-                    color: $grayish-blue;
-                }
-            }
-        }
-        .right{
-            border-radius: 50%;
-            background-color:$light-grayish-blue;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            position: relative;
-            img{
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left:10px;
-                top:10px;
-            }
-        }
+				width: 50px;
+				border-radius: 50%;
+			}
+			.person-info {
+				padding-left: 2%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				h4 {
+					color: $very-dark-grayish-blue;
+				}
+				p {
+					color: $grayish-blue;
+				}
+			}
+		}
+		.right {
+			border-radius: 50%;
+			background-color: $light-grayish-blue;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			position: relative;
+			#share {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				left: 10px;
+				top: 10px;
+			}
+		}
 	}
 	/* card info bottom ends*/
 }
 
 /* card info bottom */
+
+#snackbar {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	top: -65px;
+	left: -95px;
+	min-width: 220px;
+	height: 40px;
+	background-color: $very-dark-grayish-blue;
+	border-radius: 5px;
+	padding: 16px;
+	bottom: 30px;
+	box-shadow: 1px 1px 3px;
+	p {
+		color: $grayish-blue;
+		letter-spacing: 5px;
+		font-size: 0.6rem;
+	}
+	img {
+		height: 20px;
+		padding-left: 10px;
+	}
+	.arrow {
+		background-color: $very-dark-grayish-blue;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: 33px;
+		left: 48%;
+		transform: rotate(45deg);
+	}
+}
+
 /* card info ends */
 
 /* attribution */
 .attribution {
-   margin:5%;
-   color:oldlace;
-   a{
-       color:white;
-       text-decoration: underline;
-   }
+	margin: 5%;
+	color: black;
+	a {
+		color: black;
+		text-decoration: underline;
+	}
 }
 /* attribution ends */
 
-@media screen and (max-width:611px){
-.card{
-    flex-wrap: wrap;
-    max-width: 292px;
-    .img-container{
-       margin-bottom: -4px;
+@media screen and (max-width: 611px) {
+	.card {
+		flex-wrap: wrap;
+		max-width: 292px;
+		.img-container {
+			margin-bottom: -4px;
+		}
     }
-}
+    #snackbar {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        top: 0px;
+        left: -235px;
+        min-width: 290px;
+        height: 61px;
+        background-color: $very-dark-grayish-blue;
+        border-radius: 0px 0px 5px 5px;
+        padding: 16px;
+        bottom: 30px;
+        box-shadow: 1px 1px 3px;
+        p {
+            color: $grayish-blue;
+            letter-spacing: 5px;
+            font-size: 0.6rem;
+        }
+        img {
+            height: 20px;
+            padding-left: 10px;
+        }
+        .arrow {
+           display: none;
+        }
+    }
 }
